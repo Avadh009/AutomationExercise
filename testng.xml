@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="AutomationExercise Suite" parallel="false">
+
+	<parameter name="device" value="1" />
+	<parameter name="hubnodeip" value="" />
+
+	<test name="Login Test">
+
+		<classes>
+			<class name="test_Files.loginTest" />
+			<class name="test_Files.homeTest" />
+			<class name="test_Files.productTest" />
+		</classes>
+
+	</test>
+
+</suite>
