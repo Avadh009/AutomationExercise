@@ -19,7 +19,7 @@ public class initBase {
 //    // Open Application
 	public static void launchApplication() {
 
-		if (driver != null) {
+		if (driver == null) {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
